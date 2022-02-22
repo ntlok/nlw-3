@@ -1,0 +1,29 @@
+$mainBlue: #29B6D1;
+$mainYellow: #FFD666;
+$white: white;
+$darkBlue: #12AFCB;
+$lightBlue: #17D6EB;
+$background: #EDFFF6;
+$title: #4D6F80;
+$text: #8FA7B2;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  // font-size: 62.5%;
+
+  @media (max-width: 1024px) {
+    font-size: 70%;
+  }
+  
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  // overflow-x: hidden;
+}
