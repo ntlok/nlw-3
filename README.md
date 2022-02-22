@@ -1,1 +1,0 @@
-# Vendo se da pra melhorar
