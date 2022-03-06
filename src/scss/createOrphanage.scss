@@ -1,8 +1,10 @@
 @import './style.scss';
 
 .createOrphanage{
-  width: 100vw;
+  width: 100%;
+  max-width: 100vw;
   // height: 100vh;
+  overflow-x: hidden;
 
   display: flex;
 
@@ -16,8 +18,7 @@
     display: flex;
     margin-left: auto;
     justify-content: center;
-    padding-top: 3rem;
-    overflow-y: scroll;
+    padding-top: 3rem;    
     
     background-color: $background;
 

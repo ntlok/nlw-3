@@ -12,17 +12,17 @@ import { api } from '../services/api';
 
 const orphanageTest = {
   name: 'Nome do orphanato',
-  latitude: '-22.9129007',
-  longitude: '-43.2910276',
+  latitude: -22.9129007,
+  longitude: -43.2910276,
   about: 'estamos ai na atividade',
   instructions: 'so vem',
   opening_hours: '08:00 as 17:00',
   open_on_weekends: false,
   images: [
-    'https://images.unsplash.com/photo-1644181528561-ac0d499a2af0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
-    'https://images.unsplash.com/photo-1644181528561-ac0d499a2af0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
-    'https://images.unsplash.com/photo-1644181528561-ac0d499a2af0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
-    "https://avatars.githubusercontent.com/u/71560756?v=4"
+    { path: 'https://images.unsplash.com/photo-1644181528561-ac0d499a2af0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'},
+    { path: 'https://images.unsplash.com/photo-1644181528561-ac0d499a2af0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'},
+    { path: 'https://images.unsplash.com/photo-1644181528561-ac0d499a2af0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'},
+    { path: "https://avatars.githubusercontent.com/u/71560756?v=4"}
   ]
 }
 
@@ -49,17 +49,19 @@ export function ViewOrphanage() {
   const [imageIndex, setImageIndex] = useState(0)
   const [orphanage, setOrphanage] = useState<Orphanage>();
 
-  const { id } = useParams()
+  // const { id } = useParams()
 
   useEffect( () => {
-    async function fetchOrphanage() {
+    // async function fetchOrphanage() {
       
-      const { data } = await api.get(`orphanages/${id}`)
+    //   const { data } = await api.get(`orphanages/${id}`)
 
-      setOrphanage(data)
-    }
+    //   setOrphanage(data)
+    // }
 
-    fetchOrphanage()
+    // fetchOrphanage()
+
+    setOrphanage(orphanageTest)
   }, [])
 
   if(!orphanage) {
