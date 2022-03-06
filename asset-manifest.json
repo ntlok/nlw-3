@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/nlw-3/static/css/main.824c6859.css",
-    "main.js": "/nlw-3/static/js/main.12f79968.js",
+    "main.css": "/nlw-3/static/css/main.74cba8cd.css",
+    "main.js": "/nlw-3/static/js/main.58236486.js",
     "static/media/background.svg": "/nlw-3/static/media/background.701aee0d4087f902a10b723ed8c3621a.svg",
     "static/media/title.svg": "/nlw-3/static/media/title.b14e56ff5a159f8c7598cf7d1951d902.svg",
     "static/media/logo.svg": "/nlw-3/static/media/logo.2b0858261429ee6b3e002dd0840b362d.svg",
     "index.html": "/nlw-3/index.html",
-    "main.824c6859.css.map": "/nlw-3/static/css/main.824c6859.css.map",
-    "main.12f79968.js.map": "/nlw-3/static/js/main.12f79968.js.map"
+    "main.74cba8cd.css.map": "/nlw-3/static/css/main.74cba8cd.css.map",
+    "main.58236486.js.map": "/nlw-3/static/js/main.58236486.js.map"
   },
   "entrypoints": [
-    "static/css/main.824c6859.css",
-    "static/js/main.12f79968.js"
+    "static/css/main.74cba8cd.css",
+    "static/js/main.58236486.js"
   ]
 }
